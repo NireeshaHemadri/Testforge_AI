@@ -248,7 +248,7 @@ export default function App() {
   const [datasetSearch, setDatasetSearch] = useState("");
   const [datasetPage, setDatasetPage] = useState(0);
 
-  const backendUrl = "http://localhost:8000";
+  const backendUrl = import.meta.env.VITE_API_URL || "https://testforge-backend-auno.onrender.com";
 
   // Pre-coded demo options for Recruiter click-to-load
   const demos = [
