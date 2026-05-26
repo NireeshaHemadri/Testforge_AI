@@ -774,7 +774,7 @@ export default function App() {
             className={`btn ${activeTab === 'showcase' ? 'btn-primary' : 'btn-secondary'}`}
             onClick={() => setActiveTab('showcase')}
           >
-            📊 Interactive Demo
+            📊 Live Demo
           </button>
           <button 
             className={`btn ${activeTab === 'workspace' ? 'btn-primary' : 'btn-secondary'}`}
@@ -832,11 +832,11 @@ export default function App() {
                 Generate Automation Suite 🚀
               </button>
               <a 
-                href="#interactive-demo-section" 
+                href="#live-demo-section" 
                 className="btn btn-secondary"
                 style={{ padding: '12px 24px', fontSize: '15px', fontWeight: 600, borderRadius: '8px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}
               >
-                Try Interactive Demo 👇
+                Try Live Demo 👇
               </a>
             </div>
 
@@ -912,7 +912,7 @@ export default function App() {
           </div>
 
           {/* Quick Demos */}
-          <div id="interactive-demo-section">
+          <div id="live-demo-section">
             <h3 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '16px' }}>Interactive Click-to-Load Demos</h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
               {demos.map((d: any, index) => (
